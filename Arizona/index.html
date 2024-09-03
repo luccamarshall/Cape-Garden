@@ -18,69 +18,100 @@
 
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-dark">
+   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
       <a class="navbar-brand mx-auto" href="index.html">
          <img src="img/cape_gardens_name_nobg.png" height="56" alt="Logo">
       </a>
-      <div id="toggler" class="wrapper custom-toggler navbar-toggler" data-toggle="collapse"
-         data-target=".navbar-collapse">
-         <div class="menu-toggle">
-            <span class="icon-bars custom-toggler navbar-toggler-icon"></span>
-         </div>
-      </div>
+      <button id="toggler" class="wrapper custom-toggler navbar-toggler" type="button" data-toggle="collapse"
+         data-target="#toggle-nav" aria-controls="toggle-nav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
       <div id="toggle-nav" class="navbar-collapse collapse">
          <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href="index.html#about">About</a> </li>
             <li class="nav-item"> <a class="nav-link" href="studio.html">Design</a> </li>
             <li class="nav-item"> <a class="nav-link" href="works.html">Construction</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="contact.html">Maintenance</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="maintenance.html">Maintenance</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
          </ul>
          <div id="social">
             <p>Your it to gave life whom as. Favourable dissimilar resolution led for and had.</p>
          </div>
       </div>
    </nav>
+
    <!-- Fullscreen Logo Image -->
    <div class="fullscreen-logo">
       <img src="img/Palette 4 Dark.png" alt="Fullscreen Logo">
    </div>
+
    <!-- Works -->
-   <div class="container-fluid works wow fadeInDown">
-      <div class="row justify-content-center">
-         <div class="col-xl-6 col-md-8 col-sm-12">
-            <p class="text-center">
-               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
-               convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-               Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-               pellentesque nec, egestas non nisi.
-               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
-               convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-               Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-               pellentesque nec, egestas non nisi.
-               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
-               convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-               Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-               pellentesque nec, egestas non nisi.
-               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
-               convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-               Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-               pellentesque nec, egestas non nisi.
-               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
-               convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-               Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-               pellentesque nec, egestas non nisi.
-               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus
-               convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-               Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-               pellentesque nec, egestas non nisi.
+   <div id="about" class="container-fluid works wow fadeInDown">
+      <h2 class="about-title">About</h2>
+      <div class="row justify-content-center align-items-center mb-5">
+         <div class="col-lg-6 col-md-8">
+            <p class="text-left">
+               At Cape Gardens Landscaping, we offer high-end design, construction, and maintenance services in the
+               central Algarve area. With our award-winning team of highly experienced professionals based in the Quinta
+               do Lago area, our dedication to excellence sets us apart.
+            </p>
+         </div>
+         <div class="col-lg-4 col-md-8">
+            <img src="img/retaining timber 1.jpg" class="img-fluid" alt="Placeholder Image 1">
+         </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+         <div class="col-lg-4 col-md-8 order-lg-1 mb-5 mb-lg-0">
+            <img src="img/Firepit.png" class="img-fluid" alt="Placeholder Image 2">
+         </div>
+         <div class="col-lg-6 col-md-8 order-lg-2">
+            <p class="text-left">
+               With over 25 years of experience in the Algarve, we are client-focused, proactive, and professional,
+               committed to producing and maintaining high-caliber schemes. Our dedication to creating stunning
+               landscapes is reflected in our track record of accolades, awards, and satisfied clients. We take pride in
+               our work and strive to bring out the beauty of every outdoor space we touch.
+            </p>
+            <p class="text-left">
+               When you choose Cape Gardens Landscaping, you are choosing more than just a landscaping service. You are
+               choosing a trusted partner who will bring your outdoor vision to life with precision and artistry.
             </p>
          </div>
       </div>
    </div>
    <!-- End Works -->
-   <!-- Swiper -->
+
+   <!-- Scripts -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $("#toggler").click(function () {
+            $("#toggle-nav").fadeToggle(500);
+         });
+
+         $('.menu-toggle').on('click', function () {
+            $('.wrapper').toggleClass('menu--is-revealed');
+         });
+
+         var alterClass = function () {
+            var ww = document.body.clientWidth;
+            if (ww < 1199) {
+               $('.LeftContent').removeClass('LeftContent');
+               $('.RightContent').removeClass('RightContent');
+            } else if (ww >= 1200) {
+               $('.LeftContent').addClass('LeftContent');
+               $('.RightContent').addClass('RightContent');
+            }
+         };
+
+         $(window).resize(function () {
+            alterClass();
+         });
+
+         // Trigger the function on page load
+         alterClass();
+      });
    </script>
-   <!-- End Javascript -->
 </body>
 
 </html>
