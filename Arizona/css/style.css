@@ -1,9 +1,7 @@
 /* Fonts */
-
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
 
 /* Basic */
-
 * {
 	margin: 0;
 	padding: 0;
@@ -14,7 +12,6 @@ body,
 .Container {
 	height: 100%;
 	font-family: 'Alegreya Sans', sans-serif;
-	padding-top: 16-rem;
 }
 
 body {
@@ -22,22 +19,11 @@ body {
 	padding-top: 80px;
 }
 
-.btn {
-	border-radius: 0;
-}
-
 a:link,
 a:hover,
 a:visited {
 	text-decoration: none;
 	color: #000;
-}
-
-a:link.white,
-a:hover.white,
-a:visited.white {
-	text-decoration: none;
-	color: #fff;
 }
 
 .bold {
@@ -62,17 +48,7 @@ p {
 	min-height: 100%;
 }
 
-/* Spacing */
-
-.no-gutter {
-	margin-right: 0;
-	margin-left: 0;
-	padding-right: 0;
-	padding-left: 0;
-}
-
 /* Navbar */
-
 .navbar {
 	position: fixed;
 	display: flex;
@@ -82,7 +58,6 @@ p {
 	z-index: 1000;
 	width: 100%;
 	padding: 1rem 1rem;
-	font-family: 'Alegreya Sans', sans-serif;
 	background-color: white;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -131,167 +106,6 @@ p {
 	margin-right: auto;
 }
 
-.wrapper {
-	margin: 0;
-	width: 200px;
-	height: 40px;
-}
-
-.menu-toggle {
-	display: block;
-	height: 40px;
-	padding: 0;
-	z-index: 1;
-	background-color: transparent;
-	border: 0 none;
-	cursor: pointer;
-	font-family: sans-serif;
-	outline: medium none;
-	overflow: visible;
-	text-align: center;
-	vertical-align: middle;
-	height: 31px;
-	width: 35px;
-	right: 0px;
-	top: 0;
-	position: absolute;
-	transition: all 0.2s ease-in-out;
-	/* Quick and smooth transition */
-}
-
-.menu-toggle:before {
-	content: attr(data-label);
-	display: block;
-	padding: 12px 0;
-	position: absolute;
-	right: 100%;
-	top: 0;
-	transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-}
-
-.menu--is-revealed .menu-toggle:before {
-	opacity: 0;
-	visibility: hidden;
-}
-
-.menu-toggle .icon-bars,
-.menu-toggle .icon-bars:before,
-.menu-toggle .icon-bars:after {
-	transition: background-color 0.2s ease-in-out;
-}
-
-.menu-toggle:focus .icon-bars,
-.menu-toggle:focus .icon-bars:before,
-menu-toggle:focus .icon-bars:after,
-menu-toggle:hover .icon-bars,
-menu-toggle:hover .icon-bars:before,
-menu-toggle:hover .icon-bars:after {
-	background-color: #000;
-}
-
-.menu-toggle .icon-bars {
-	transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	background-color: #000;
-}
-
-.menu-toggle .icon-bars:before,
-.menu-toggle .icon-bars:after {
-	transition: top 0.2s ease-in-out, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	background-color: #000;
-}
-
-.menu-toggle:active .icon-bars,
-.menu--is-revealed .menu-toggle .icon-bars {
-	transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	transform: rotate3d(0, 0, 1, 135deg);
-}
-
-.menu-toggle:active .icon-bars:before,
-.menu-toggle:active .icon-bars:after,
-.menu--is-revealed .menu-toggle .icon-bars:before,
-.menu--is-revealed .menu-toggle .icon-bars:after {
-	transition: top 0.2s ease-in-out, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	transform: rotate3d(0, 0, 1, 90deg);
-	top: 0;
-}
-
-.menu--is-revealed .menu-toggle {
-	position: fixed;
-	top: 31px;
-	right: 22px;
-}
-
-.nav-item {
-	font-size: 1.2rem;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.icon-bars {
-	position: relative;
-}
-
-.icon-bars,
-.icon-bars:before,
-.icon-bars:after {
-	display: block;
-	width: 32px;
-	height: 2px;
-	background-color: currentColor;
-}
-
-.icon-bars,
-.icon-bars:before,
-.icon-bars:after {
-	background-color: #273138;
-}
-
-.icon-bars:before,
-.icon-bars:after {
-	content: "";
-	position: absolute;
-	left: 0;
-}
-
-.icon-bars:before {
-	top: 0.5em;
-}
-
-.icon-bars:after {
-	top: -0.5em;
-}
-
-@media screen and (min-width:768px) {
-	.navbar-brand-centered {
-		position: absolute;
-		left: 50%;
-		display: block;
-		width: 100%;
-		text-align: center;
-	}
-
-	.navbar>.container .navbar-brand-centered,
-	.navbar>.container-fluid .navbar-brand-centered {
-		margin-left: -50%;
-	}
-}
-
-/* Hide the phone number on mobile devices */
-@media (max-width: 991px) {
-	.navbar-text {
-		display: none;
-	}
-}
-
-.navbar-toggler-icon {
-	top: 15px;
-	right: 0px;
-	position: absolute;
-}
-
-.navbar-dark .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 .navbar-nav {
 	display: flex;
 	justify-content: center;
@@ -301,7 +115,6 @@ menu-toggle:hover .icon-bars:after {
 
 .navbar-nav .nav-item {
 	padding: 8px 0;
-	/* Space out the nav items */
 }
 
 .navbar-nav .nav-link {
@@ -320,25 +133,11 @@ menu-toggle:hover .icon-bars:after {
 	color: #555 !important;
 }
 
-.navbar-toggler {
-	border: none;
-	/* Remove default border for a cleaner look */
-}
-
-.navbar-toggler:focus {
-	outline: none;
-	/* Remove the outline on focus */
-}
-
-/* Custom Navbar Styles */
 .custom-navbar {
 	min-height: 70px;
-	/* Ensures the navbar isn't too short */
 	padding: 10px 15px;
-	/* Adds padding for better spacing */
 }
 
-/* Adjust padding for the toggler button */
 .custom-toggler {
 	padding: 0.5rem 1rem;
 	align-self: start;
@@ -353,7 +152,7 @@ menu-toggle:hover .icon-bars:after {
 	z-index: 9999;
 }
 
-@media screen and (max-width:991px) {
+@media (max-width: 991px) {
 	.navbar-collapse {
 		height: 100vh;
 		background-color: #e9e8e6;
@@ -371,13 +170,10 @@ menu-toggle:hover .icon-bars:after {
 		width: 50%;
 		margin: -15% 0 0 -25%;
 	}
-}
 
-.navbar-toggler {
-	height: 30px;
-	width: 21px;
-	position: absolute;
-	right: 22px;
+	.navbar-text {
+		display: none;
+	}
 }
 
 @media (min-width: 992px) {
@@ -401,218 +197,35 @@ menu-toggle:hover .icon-bars:after {
 	}
 }
 
-/* Half Page */
-
-.Container:before {
-	content: '';
-	height: 100%;
-	float: left;
-}
-
-.Content {
-	position: relative;
-	z-index: 1;
-}
-
-.Content:after {
-	content: '';
-	clear: both;
-	display: block;
-}
-
-.Wrapper {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	color: #000;
-	background-color: #e9e8e6;
-}
-
-.LeftContent {
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-
-/* Right Content */
-.RightContent {
-	overflow-y: auto;
-	width: 50%;
-	float: right;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-}
-
-@media (max-width: 991px) {
-
-	.LeftContent,
-	.RightContent {
-		width: 100%;
-		float: none;
-	}
-
-	.RightContent {
-		padding: 2rem;
-	}
-}
-
-@media (min-width: 1200px) {
-	.Wrapper>div {
-		height: 100%;
-	}
-}
-
-.split-image-left {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-}
-
-.background-1 {
-	background-image: url("../img/cape_gardens.jpg");
-}
-
-.background-2 {
-	background-image: url("../img/photo-4.jpg");
-}
-
-.split-image-right {
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-}
-
-.signature {
-	padding-top: 2rem;
-	height: 6rem;
-}
-
-/* Works - Horizontal Gallery */
-
-.swiper-container {
-	width: 100%;
-	height: 100%;
-	margin-bottom: 5rem;
-}
-
-@media (max-width: 1200px) {
-	.swiper-container {
-		padding: 0 20px 0;
-	}
-}
-
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-:root {
-	--swiper-theme-color: #000;
-}
-
-.swiper-pagination {
-	display: none;
+.fullscreen-logo img {
+	max-width: 100%;
+	height: auto;
+	/* Adjust the width as needed */
 }
 
 /* Works */
-
 .works {
 	font-size: 1.2em;
 	padding-top: 14rem;
 	padding-bottom: 3rem;
-}
-
-/* Studio */
-
-.studio {
-	font-size: 1.2em;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-}
-
-/* Contact */
-
-.contact {
-	font-size: 1.8em;
-	padding-top: 15rem;
-	padding-bottom: 10rem;
-}
-
-/* Contact Form */
-
-.contact-form {
-	font-size: 1.2em;
-	padding-bottom: 11rem;
-}
-
-.contact-form .btn-primary {
-	color: #fff;
-	background-color: #000;
-	border-color: #000;
-}
-
-.contact-form .form-control {
-	color: #000;
-	background-color: transparent;
-	border-color: #000;
-	border-width: 0 0 2px 0;
-	border-radius: 0;
-	border-style: solid;
-	font-size: 1.5rem;
-}
-
-.form-control::-webkit-input-placeholder {
-	color: #000;
-	opacity: 0.6;
-}
-
-.form-control {
-	padding: 1.5rem 16rem 1.5rem 0.75rem
-}
-
-.contact-form .btn {
-	padding: 0.8rem 4rem;
-	border-radius: 5px;
-}
-
-/* Fullscreen Logo */
-.fullscreen-logo {
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
-}
-
-.fullscreen-logo img {
-	max-width: 80%;
-	max-height: 90%;
-	object-fit: contain;
-}
-
-.works {
-	padding: 60px 0;
+	max-width: 90%;
 }
 
 .about-title {
 	font-size: 36px;
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+.about {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 20px;
+	/* Ensure there is space between text and image */
+}
+
+.about .text-left {
+	grid-column: 1;
 }
 
 .works p {
@@ -625,19 +238,16 @@ menu-toggle:hover .icon-bars:after {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
-/* Adjust the padding and margins for a more balanced look */
 .row {
 	margin-bottom: 40px;
 }
 
 #about {
 	padding-top: 100px;
-	/* Adjust the value as needed */
 	margin-top: -80px;
-	/* Negative margin to compensate for the padding */
 }
 
 #number {
@@ -655,54 +265,38 @@ menu-toggle:hover .icon-bars:after {
 	color: #555 !important;
 }
 
-/* Adjust the padding and margins for a more balanced look */
-.row {
-	margin-bottom: 40px;
-}
-
-#about {
-	padding-top: 100px;
-	/* Adjust the value as needed */
-	margin-top: -80px;
-	/* Negative margin to compensate for the padding */
-}
-
 /* Control the size and other attributes of each photo in the About section */
 #photo_index_1,
 #photo_index_2 {
 	width: 100%;
-	/* Make the photos responsive */
 	max-width: 400px;
-	/* Set a maximum width */
 	height: auto;
-	/* Maintain aspect ratio */
 	border-radius: 10px;
-	/* Add rounded corners */
-	/* Add a subtle shadow */
 	margin-bottom: 20px;
-	/* Add some space below the photos */
+}
+
+#photo_index_1 {
+	grid-column: 2;
+	transform: scale(1.1);
+	/* Increase the scale */
 }
 
 #photo_index_2 {
-	transform: scale(0.8);
+	transform: scale(1);
 }
 
-/* Add specific styles for larger screens */
 @media (min-width: 768px) {
 
 	#photo_index_1,
 	#photo_index_2 {
 		max-width: 500px;
-		/* Increase the maximum width for larger screens */
 	}
 }
 
-/* Add specific styles for even larger screens */
 @media (min-width: 1200px) {
 
 	#photo_index_1,
 	#photo_index_2 {
 		max-width: 600px;
-		/* Increase the maximum width for even larger screens */
 	}
 }
