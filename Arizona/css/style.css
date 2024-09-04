@@ -10,6 +10,7 @@
 html,
 body,
 .Container {
+	scroll-behavior: smooth;
 	height: 100%;
 	font-family: 'Alegreya Sans', sans-serif;
 }
@@ -17,6 +18,10 @@ body,
 body {
 	background-color: white;
 	padding-top: 80px;
+	min-height: 100vh;
+	/* Ensure the body is at least 100% of the viewport height */
+	padding-bottom: 100px;
+	/* Add padding to the bottom to ensure scrollability */
 }
 
 a:link,
@@ -46,6 +51,19 @@ p {
 
 .min-100 {
 	min-height: 100%;
+}
+
+body {
+	background-color: white;
+	padding-top: 80px;
+}
+
+.contact {
+	padding-top: 100px;
+}
+
+.design {
+	padding-top: 50px;
 }
 
 /* Navbar */
@@ -197,10 +215,18 @@ p {
 	}
 }
 
+.fullscreen-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* Ensure the container takes the full viewport height */
+}
+
 .fullscreen-logo img {
-	max-width: 100%;
+	max-width: 75%;
+	/* Scale the image to 90% of its current size */
 	height: auto;
-	/* Adjust the width as needed */
 }
 
 /* Works */
@@ -229,7 +255,6 @@ p {
 }
 
 .works p {
-	font-size: 24px;
 	line-height: 1.8;
 	margin-bottom: 20px;
 }
@@ -271,7 +296,6 @@ p {
 	width: 100%;
 	max-width: 400px;
 	height: auto;
-	border-radius: 10px;
 	margin-bottom: 20px;
 }
 
@@ -299,4 +323,47 @@ p {
 	#photo_index_2 {
 		max-width: 600px;
 	}
+}
+
+/* Footer */
+.footer p,
+.footer a {
+	font-size: 0.9rem;
+	/* Adjust the font size as needed */
+}
+
+.footer h5 {
+	margin-bottom: 1.5rem;
+	/* Adjust the margin as needed */
+}
+
+.iframe-container {
+	position: left;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
+
+.photo-row {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+	margin-top: 90px;
+	margin-bottom: 90px;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+}
+
+.photo-placeholder {
+	flex: 1;
+	margin: 0 10px;
+	background-color: #e0e0e0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo-placeholder img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
 }
