@@ -1,24 +1,29 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Smooth Scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
   });
+});
 
-  // Other existing JavaScript code
+// Toggle navigation visibility on small screens
+$(document).ready(function () {
   $("#toggler").click(function () {
-    $("#toggle-nav").fadeToggle(500);
+    $("#toggle-nav").fadeToggle(200);  // Use 'fadeToggle' for smooth fade-in and fade-out
   });
 
-  $('.menu-toggle').on('click', function () {
-    $('.wrapper').toggleClass('menu--is-revealed');
+  // Ensure the menu closes when clicking outside or on a menu item (for mobile view)
+  $(document).click(function (e) {
+    var target = e.target;
+    if (!$(target).closest('#toggler, #toggle-nav').length) {
+      $("#toggle-nav").fadeOut(200);  // Use 'fadeOut' for smooth fade-out
+    }
   });
 
+  // Control LeftContent and RightContent classes based on window width
   var alterClass = function () {
     var ww = document.body.clientWidth;
     if (ww < 1199) {

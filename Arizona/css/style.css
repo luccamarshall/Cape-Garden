@@ -40,8 +40,6 @@ a:visited.white {
 	color: #fff;
 }
 
-
-
 .bold {
 	font-weight: bold;
 }
@@ -64,7 +62,6 @@ p {
 	min-height: 100%;
 }
 
-
 /* Spacing */
 
 .no-gutter {
@@ -74,12 +71,10 @@ p {
 	padding-left: 0;
 }
 
-
 /* Navbar */
 
 .navbar {
 	position: fixed;
-	/* Change from absolute to fixed */
 	top: 0;
 	z-index: 1000;
 	width: 100%;
@@ -157,6 +152,8 @@ p {
 	right: 0px;
 	top: 0;
 	position: absolute;
+	transition: all 0.2s ease-in-out;
+	/* Quick and smooth transition */
 }
 
 .menu-toggle:before {
@@ -166,7 +163,7 @@ p {
 	position: absolute;
 	right: 100%;
 	top: 0;
-	transition: color 0.2s ease 0s, opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+	transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
 .menu--is-revealed .menu-toggle:before {
@@ -177,32 +174,32 @@ p {
 .menu-toggle .icon-bars,
 .menu-toggle .icon-bars:before,
 .menu-toggle .icon-bars:after {
-	transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease-in-out;
 }
 
 .menu-toggle:focus .icon-bars,
 .menu-toggle:focus .icon-bars:before,
-.menu-toggle:focus .icon-bars:after,
-.menu-toggle:hover .icon-bars,
-.menu-toggle:hover .icon-bars:before,
-.menu-toggle:hover .icon-bars:after {
+menu-toggle:focus .icon-bars:after,
+menu-toggle:hover .icon-bars,
+menu-toggle:hover .icon-bars:before,
+menu-toggle:hover .icon-bars:after {
 	background-color: #000;
 }
 
 .menu-toggle .icon-bars {
-	transition: transform 0.3s ease-in, background-color 0.2s ease;
+	transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	background-color: #000;
 }
 
 .menu-toggle .icon-bars:before,
 .menu-toggle .icon-bars:after {
-	transition: top 0.3s 0.3s ease-in, transform 0.3s ease-in, background-color 0.2s ease;
+	transition: top 0.2s ease-in-out, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	background-color: #000;
 }
 
 .menu-toggle:active .icon-bars,
 .menu--is-revealed .menu-toggle .icon-bars {
-	transition: transform 0.3s 0.2s ease-in, background-color 0.2s ease;
+	transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	transform: rotate3d(0, 0, 1, 135deg);
 }
 
@@ -210,7 +207,7 @@ p {
 .menu-toggle:active .icon-bars:after,
 .menu--is-revealed .menu-toggle .icon-bars:before,
 .menu--is-revealed .menu-toggle .icon-bars:after {
-	transition: top 0.2s ease-in, transform 0.3s 0.2s ease-in, background-color 0.2s ease;
+	transition: top 0.2s ease-in-out, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	transform: rotate3d(0, 0, 1, 90deg);
 	top: 0;
 }
@@ -278,6 +275,7 @@ p {
 		width: 100%;
 		text-align: center;
 	}
+
 	.navbar>.container .navbar-brand-centered,
 	.navbar>.container-fluid .navbar-brand-centered {
 		margin-left: -50%;
@@ -346,6 +344,7 @@ p {
 		width: 100%;
 		position: fixed;
 	}
+
 	.navbar-nav {
 		position: absolute;
 		top: 50%;
@@ -377,12 +376,12 @@ p {
 		width: 90%;
 		margin: 5%;
 	}
+
 	#social p {
 		font-size: 0.9rem;
 		padding-top: 1rem;
 	}
 }
-
 
 /* Half Page */
 
@@ -470,7 +469,6 @@ p {
 	height: 6rem;
 }
 
-
 /* Works - Horizontal Gallery */
 
 .swiper-container {
@@ -503,14 +501,13 @@ p {
 	align-items: center;
 }
 
- :root {
+:root {
 	--swiper-theme-color: #000;
 }
 
 .swiper-pagination {
 	display: none;
 }
-
 
 /* Works */
 
@@ -520,7 +517,6 @@ p {
 	padding-bottom: 3rem;
 }
 
-
 /* Studio */
 
 .studio {
@@ -529,7 +525,6 @@ p {
 	padding-bottom: 10rem;
 }
 
-
 /* Contact */
 
 .contact {
@@ -537,7 +532,6 @@ p {
 	padding-top: 15rem;
 	padding-bottom: 10rem;
 }
-
 
 /* Contact Form */
 
