@@ -282,6 +282,13 @@ menu-toggle:hover .icon-bars:after {
 	}
 }
 
+/* Hide the phone number on mobile devices */
+@media (max-width: 991px) {
+	.navbar-text {
+		display: none;
+	}
+}
+
 .navbar-toggler-icon {
 	top: 15px;
 	right: 0px;
@@ -300,6 +307,17 @@ menu-toggle:hover .icon-bars:after {
 .navbar-nav .nav-link {
 	font-size: 1rem;
 	padding: 8px 15px;
+}
+
+.navbar-text .nav-link {
+	font-size: 1rem;
+	padding: 8px 15px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.navbar-text .nav-link:hover {
+	color: #555 !important;
 }
 
 .navbar-toggler {
@@ -620,4 +638,71 @@ menu-toggle:hover .icon-bars:after {
 	/* Adjust the value as needed */
 	margin-top: -80px;
 	/* Negative margin to compensate for the padding */
+}
+
+#number {
+	font-size: large;
+}
+
+#number .nav-link {
+	font-size: 1rem;
+	padding: 8px 15px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+#number .nav-link:hover {
+	color: #555 !important;
+}
+
+/* Adjust the padding and margins for a more balanced look */
+.row {
+	margin-bottom: 40px;
+}
+
+#about {
+	padding-top: 100px;
+	/* Adjust the value as needed */
+	margin-top: -80px;
+	/* Negative margin to compensate for the padding */
+}
+
+/* Control the size and other attributes of each photo in the About section */
+#photo_index_1,
+#photo_index_2 {
+	width: 100%;
+	/* Make the photos responsive */
+	max-width: 400px;
+	/* Set a maximum width */
+	height: auto;
+	/* Maintain aspect ratio */
+	border-radius: 10px;
+	/* Add rounded corners */
+	/* Add a subtle shadow */
+	margin-bottom: 20px;
+	/* Add some space below the photos */
+}
+
+#photo_index_2 {
+	transform: scale(0.8);
+}
+
+/* Add specific styles for larger screens */
+@media (min-width: 768px) {
+
+	#photo_index_1,
+	#photo_index_2 {
+		max-width: 500px;
+		/* Increase the maximum width for larger screens */
+	}
+}
+
+/* Add specific styles for even larger screens */
+@media (min-width: 1200px) {
+
+	#photo_index_1,
+	#photo_index_2 {
+		max-width: 600px;
+		/* Increase the maximum width for even larger screens */
+	}
 }
