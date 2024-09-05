@@ -42,3 +42,9 @@ $(document).ready(function () {
   // Trigger the function on page load
   alterClass();
 });
+
+document.getElementById('emailForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+  const email = document.getElementById('emailInput').value;
+  window.location.href = `mailto:info@cape-gardens.com?subject=New%20Email%20Submission&body=${email}`;
+});

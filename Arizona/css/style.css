@@ -409,3 +409,32 @@ body {
 	padding-bottom: 5px;
 }
 
+#emailForm {
+	margin-top: 50px;
+}
+
+#emailInput {
+	padding: 15px;
+	/* Make the input box bigger */
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 300px;
+	/* Increase the width of the input box */
+}
+
+#emailForm button {
+	padding: 15px 30px;
+	/* Make the button bigger */
+	background-color: #000;
+	/* Same color as the navbar text */
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#emailForm button:hover {
+	background-color: #555;
+	/* Same hover color as the navbar text */
+}
