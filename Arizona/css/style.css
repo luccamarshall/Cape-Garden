@@ -409,8 +409,12 @@ p {
 
 .construction_title{
     font-size: 2rem;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-top: 60px;
+}
+
+.uot-construction{
+    padding-bottom: 20px;
 }
 
 #design-drawing {
@@ -418,4 +422,29 @@ p {
     height: auto;
     margin-bottom: 20px;
     max-height: 90%; /* Set max-height to 90% of the current height */
+}
+
+/* Add this to the existing CSS file */
+.social-icon-f {
+   width: 40px; /* Adjust the size as needed */
+   height: 35px; /* Adjust the size as needed */
+   margin-right: 10px;
+}
+
+.social-icon-i {
+   width: 45px; /* Adjust the size as needed */
+   height: 35px; /* Adjust the size as needed */
+   margin-right: 10px;
+}
+
+.social-icon-f-contact {
+   width: 90px; /* Adjust the size as needed */
+   height: 80px; /* Adjust the size as needed */
+   margin-right: 10px;
+}
+
+.social-icon-i-contact {
+   width: 95px; /* Adjust the size as needed */
+   height: 75px; /* Adjust the size as needed */
+   margin-right: 10px;
 }
