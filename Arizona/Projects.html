@@ -89,7 +89,7 @@
     </div>
     <!-- End Swiper -->
     <!-- Footer -->
-    
+
     <footer class="footer bg-light py-4">
         <div class="container">
             <div class="row">
@@ -119,7 +119,6 @@
                     <a href="https://www.instagram.com/capegardens/" class="text-dark mr-3">
                         <img src="./img/footer/instagram.png" alt="Instagram" class="social-icon-i">
                     </a>
-                    <!-- Existing certificate logos -->
                     <img src="./img/footer/landscape_institute.jpg" alt="Certificate 1" class="certificate-logo mr-2">
                     <img src="./img/footer/apap_inverted.png" alt="Certificate 2" class="certificate-logo">
                 </div>
@@ -130,49 +129,9 @@
     <script src="vendor/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/swiper/js/swiper.min.js"></script>
     <script src="js/global.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <!-- Swiper JS -->
-    <script src="vendor/swiper/js/swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                400: {
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
-                    spaceBetween: 30,
-                },
-                768: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 1,
-                    spaceBetween: 30,
-                },
-                1200: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    spaceBetween: 30,
-                },
-            },
-            keyboard: {
-                enabled: true,
-                onlyInViewport: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-    <!-- End Javascript -->
 </body>
 
 </html>
