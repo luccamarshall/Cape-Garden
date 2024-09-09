@@ -36,6 +36,7 @@ a:visited {
 
 h1 {
     font-size: 3.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -216,8 +217,8 @@ p {
 /* Works */
 .works {
     font-size: 1.2em;
-    padding-top: 14rem;
     padding-bottom: 3rem;
+    padding-top: 25px   ;
     max-width: 90%;
 }
 
@@ -408,7 +409,7 @@ p {
 .construction_title {
     font-size: 2rem;
     padding-bottom: 30px;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .uot-construction {
@@ -527,4 +528,46 @@ p {
     .certificate-logo {
         width: 40px; /* Adjust the width for smaller screens */
     }
+}
+
+.project_title {
+    font-size: 2rem;
+    position: relative;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+#maintenance {
+    padding-top: 130px;
+    margin-top: -80px;
+}
+
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    transition: filter 0.3s ease;
+}
+
+.swiper-slide:hover img {
+    filter: blur(5px);
+}
+
+.project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide:hover .project-name {
+    opacity: 1;
 }
