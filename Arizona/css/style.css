@@ -333,13 +333,15 @@ p {
 
 #design_title {
     font-size: 2rem;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 50px;
 }
 
 #ls_design,
 #pld_design {
     font-size: 1.5rem;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 #ls_text {
