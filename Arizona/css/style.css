@@ -425,74 +425,95 @@ p {
 
 /* Add this to the existing CSS file */
 .social-icon-f {
-   width: 40px; /* Adjust the size as needed */
-   height: 35px; /* Adjust the size as needed */
+   width: 40px; 
+   height: 35px; 
    margin-right: 10px;
 }
 
 .social-icon-i {
-   width: 45px; /* Adjust the size as needed */
-   height: 35px; /* Adjust the size as needed */
+   width: 45px; 
+   height: 35px; 
    margin-right: 10px;
 }
 
 .social-icon-f-contact {
-   width: 90px; /* Adjust the size as needed */
-   height: 80px; /* Adjust the size as needed */
+   width: 90px; 
+   height: 80px; 
    margin-right: 10px;
 }
 
 .social-icon-i-contact {
-   width: 95px; /* Adjust the size as needed */
-   height: 75px; /* Adjust the size as needed */
+   width: 95px; 
+   height: 75px; 
    margin-right: 10px;
 }
 
 @media (max-width: 576px) {
     .studio .text-section,
     .studio .photo-section {
-        width: 100%; /* Make text and photo sections take full width */
-        padding: 15px; /* Add padding to the sections */
+        width: 100%;
+        padding: 15px; 
     }
 
     .studio .text-section h2,
     .studio .text-section h3,
     .studio .text-section p {
-        margin-left: 10px; /* Add margin to the text elements */
-        margin-right: 10px; /* Add margin to the text elements */
+        margin-left: 10px; 
+        margin-right: 10px; 
     }
 
     .studio .text-section h2 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; 
     }
 
     .studio .text-section h3 {
-        font-size: 1.25rem; /* Adjust font size for smaller screens */
+        font-size: 1.25rem; 
     }
 
     .studio .text-section p {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem; 
     }
 }
 
 /* Privacy Policy Styles */
 #pp-Title {
-    font-size: 2.5rem; /* Make the main title larger */
-    margin-bottom: 2rem; /* Add spacing below the main title */
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
 }
 
 .privacy-policy h3 {
-    font-size: 1.75rem; /* Slightly larger font for other titles */
-    margin-top: 1.5rem; /* Add spacing above the other titles */
+    font-size: 1.75rem; 
+    margin-top: 1.5rem; 
 }
 
 .privacy-policy p, .privacy-policy ul {
-    text-align: justify; /* Justify the text */
+    text-align: justify; 
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%; /* Ensure the text occupies the whole screen */
+    max-width: 100%;
 }
 
 .privacy-policy ul {
-    padding-left: 1.5rem; /* Add padding to the list */
+    padding-left: 1.5rem; 
+}
+
+#tc-Title {
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
+}
+
+.terms-and-conditions h3 {
+    font-size: 1.75rem; 
+    margin-top: 1.5rem; 
+}
+
+.terms-and-conditions p, .terms-and-conditions ul {
+    text-align: justify; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+
+.terms-and-conditions ul {
+    padding-left: 1.5rem; 
 }
