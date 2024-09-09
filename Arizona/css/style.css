@@ -474,3 +474,25 @@ p {
         font-size: 1rem; /* Adjust font size for smaller screens */
     }
 }
+
+/* Privacy Policy Styles */
+#pp-Title {
+    font-size: 2.5rem; /* Make the main title larger */
+    margin-bottom: 2rem; /* Add spacing below the main title */
+}
+
+.privacy-policy h3 {
+    font-size: 1.75rem; /* Slightly larger font for other titles */
+    margin-top: 1.5rem; /* Add spacing above the other titles */
+}
+
+.privacy-policy p, .privacy-policy ul {
+    text-align: justify; /* Justify the text */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Ensure the text occupies the whole screen */
+}
+
+.privacy-policy ul {
+    padding-left: 1.5rem; /* Add padding to the list */
+}
