@@ -405,13 +405,13 @@ p {
     flex: var(--magnifier);
 }
 
-.construction_title{
+.construction_title {
     font-size: 2rem;
     padding-bottom: 30px;
     padding-top: 60px;
 }
 
-.uot-construction{
+.uot-construction {
     padding-bottom: 20px;
 }
 
@@ -419,32 +419,31 @@ p {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    max-height: 90%; 
+    max-height: 90%;
 }
 
-/* Add this to the existing CSS file */
 .social-icon-f {
-   width: 40px; 
-   height: 35px; 
-   margin-right: 10px;
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
 }
 
-.social-icon-i {
-   width: 45px; 
-   height: 35px; 
-   margin-right: 10px;
+social-icon-i {
+    width: 45px;
+    height: 35px;
+    margin-right: 10px;
 }
 
 .social-icon-f-contact {
-   width: 90px; 
-   height: 80px; 
-   margin-right: 10px;
+    width: 90px;
+    height: 80px;
+    margin-right: 10px;
 }
 
 .social-icon-i-contact {
-   width: 95px; 
-   height: 75px; 
-   margin-right: 10px;
+    width: 95px;
+    height: 75px;
+    margin-right: 10px;
 }
 
 @media (max-width: 576px) {
