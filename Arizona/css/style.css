@@ -274,7 +274,6 @@ p {
     color: #555 !important;
 }
 
-/* Control the size and other attributes of each photo in the About section */
 #photo_index_1,
 #photo_index_2 {
     width: 100%;
@@ -421,7 +420,7 @@ p {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    max-height: 90%; /* Set max-height to 90% of the current height */
+    max-height: 90%; 
 }
 
 /* Add this to the existing CSS file */
@@ -447,4 +446,31 @@ p {
    width: 95px; /* Adjust the size as needed */
    height: 75px; /* Adjust the size as needed */
    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    .studio .text-section,
+    .studio .photo-section {
+        width: 100%; /* Make text and photo sections take full width */
+        padding: 15px; /* Add padding to the sections */
+    }
+
+    .studio .text-section h2,
+    .studio .text-section h3,
+    .studio .text-section p {
+        margin-left: 10px; /* Add margin to the text elements */
+        margin-right: 10px; /* Add margin to the text elements */
+    }
+
+    .studio .text-section h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .studio .text-section h3 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .studio .text-section p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }
