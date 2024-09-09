@@ -122,7 +122,6 @@ p {
     display: flex;
     justify-content: center;
     width: calc(100% - 100px);
-    margin-left: 100px;
 }
 
 .navbar-nav .nav-item,
