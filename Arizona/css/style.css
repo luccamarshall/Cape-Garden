@@ -550,7 +550,11 @@ p {
 }
 
 .swiper-slide img {
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
     transition: filter 0.3s ease;
+    overflow-x: hidden;
 }
 
 .swiper-slide:hover img {
@@ -564,7 +568,6 @@ p {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 1.5rem;
-    font-weight: bold;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
