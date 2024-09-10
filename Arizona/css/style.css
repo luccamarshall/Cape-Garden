@@ -584,3 +584,12 @@ p {
     object-fit: cover;
     overflow: hidden;
 }
+
+/* Add this to style.css to adjust list formatting */
+ul {
+    padding-left: 1.5rem; /* Adjust as needed to fit within the text area */
+}
+
+ul li {
+    margin-left: 0; /* Ensure list items are aligned properly */
+}
