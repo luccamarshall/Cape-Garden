@@ -7,7 +7,7 @@ This project is a commissioned website for a landscape architecture company. The
 - **Minimalistic Design**: The website has a clean and simple design to ensure a focus on content.
 - **Responsive Layout**: The website is fully responsive and works well on all devices.
 - **Image Gallery**: The website includes an image gallery to showcase the company's projects.
-- **Contact Form**: A contact form is available for potential clients to get in touch.
+- **contact Form**: A contact form is available for potential clients to get in touch.
 - **Animations**: Subtle animations are used to enhance the user experience.
 
 ## Technologies Used
@@ -40,7 +40,7 @@ This project is a commissioned website for a landscape architecture company. The
 - **Home Page**: Provides an overview of the company and its services.
 - **About Page**: Details about the company and its mission.
 - **Projects Page**: Showcases the company's completed projects.
-- **Contact Page**: A form for potential clients to get in touch.
+- **contact Page**: A form for potential clients to get in touch.
 
 ## License
 
@@ -54,6 +54,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - [Animate.css](https://animate.style/)
 - [WOW.js](https://wowjs.uk/)
 
-## Contact
+## contact
 
 For any inquiries, please contact me at (lucca.marshall2003@gmail.com).
