@@ -239,7 +239,7 @@ p {
 }
 
 .about {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 20px;
@@ -268,7 +268,21 @@ p {
 #about {
     padding-top: 100px;
     margin-top: -80px;
+    width: 90%; /* Default width */
 }
+
+@media (min-width: 768px) {
+    #about {
+        width: 100%; /* Adjust width for medium screens */
+    }
+}
+
+@media (min-width: 1800px) {
+    #about {
+        width: 70%; /* Adjust width for larger screens */
+    }
+}
+
 
 #number {
     font-size: large;
@@ -324,20 +338,7 @@ p {
 }
 
 .text-section {
-    width: 100%; /* Full width on small screens */
     padding-right: 20px;
-}
-
-@media (min-width: 992px) {
-    .text-section {
-        width: 70%; /* Adjusts to 70% on medium to large screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    .text-section {
-        width: 60%; /* Adjusts to 60% on larger screens */
-    }
 }
 
 
