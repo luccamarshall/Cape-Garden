@@ -640,3 +640,8 @@ ul li {
     position: relative;
     padding-top: 60px;
 }
+
+#maintenance_text{
+    padding-left: 40px;
+    padding-right: 40px;
+}
