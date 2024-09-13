@@ -651,7 +651,7 @@ ul li {
 }
 
 #maintenance_text_1{
-    padding-left: 40px;
+    padding-left: 0px;
     padding-right: 40px;
 }
 
@@ -695,6 +695,6 @@ ul li {
     color: white;
 }
 
-h4 {
+.title_project_image {
     font-size: 3rem;
 }
