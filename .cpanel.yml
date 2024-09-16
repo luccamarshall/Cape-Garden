@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/capegardenscom/public-html/
-    - /usr/bin/rsync -av --exclude='.git' --exclude='.gitignore' --exclude='.gitattributes' --exclude='vendor' --exclude='node_modules' ./ $DEPLOYPATH
