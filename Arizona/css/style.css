@@ -1,6 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
 
+
 /* Basic */
 * {
     margin: 0;
@@ -392,8 +393,6 @@ p {
     background-color: #555;
 }
 
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
 
 :root {
     --magnifier: 6;
