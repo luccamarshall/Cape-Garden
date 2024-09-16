@@ -233,7 +233,7 @@ p {
     font-size: 2rem;
     position: relative;}
 
-#text_about_1 {
+#text_about_1, #text_about_2, #text_about_3 {
     position: relative;
     padding-top: 60px;
 }
@@ -302,13 +302,6 @@ p {
 }
 
 #photo_index_3{
-    transform: scale(1.1);
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#photo_index_1 {
-    grid-column: 2;
     transform: scale(1.1);
     padding-left: 5px;
     padding-right: 5px;
