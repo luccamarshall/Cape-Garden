@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/capegardenscom/public_html
+    - /bin/cp -f Arizona/index.html $DEPLOY_PATH/index.html
+    - /bin/cp -rf Arizona/css $DEPLOY_PATH/css
+    - /bin/cp -rf Arizona/js $DEPLOY_PATH/js
+    - /bin/cp -rf Arizona/img $DEPLOY_PATH/img
+    - /bin/cp -rf Arizona/vendor $DEPLOY_PATH/vendor
+    - /bin/cp -f Arizona/construction.html $DEPLOY_PATH/construction.html
+    - /bin/cp -f Arizona/contact.html $DEPLOY_PATH/contact.html
+    - /bin/cp -f Arizona/design.html $DEPLOY_PATH/design.html
+    - /bin/cp -f Arizona/maintenance.html $DEPLOY_PATH/maintenance.html
+    - /bin/cp -f Arizona/privacy.html $DEPLOY_PATH/privacy.html
+    - /bin/cp -f Arizona/projects.html $DEPLOY_PATH/projects.html
+    - /bin/cp -rf Arizona/projects $DEPLOY_PATH/projects
+    - /bin/cp -f Arizona/terms.html $DEPLOY_PATH/terms.html
