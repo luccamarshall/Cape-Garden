@@ -1,5 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/capegardenscom/public-html/
-    - /usr/bin/rsync -av --exclude='.gitignore'./ $DEPLOYPATH
+    - export DEPLOYPATH=/home/capegardenscom/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    - find $DEPLOYPATH -type d -exec chmod 755 {} \;
+    - find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - chown -R capegardenscom:capegardenscom $DEPLOYPATH
