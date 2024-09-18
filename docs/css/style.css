@@ -560,6 +560,8 @@ p {
 #maintenance {
     padding-top: 130px;
     margin-top: -80px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .swiper-slide {
